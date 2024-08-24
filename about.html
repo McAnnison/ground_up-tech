@@ -6,17 +6,14 @@
 
 			body{
 				background-color: white;
-				background-image: url(myprofile.jpg);
 				background-size: cover;
 				background-position: center center;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-				
+								
 			}
 			body{
 				font-family: Arial, sans-serif;
 				line-height: 1.6;
-				color: #333;
+				color: black;
 				margin: 0;
 				padding: 0;
 				margin-right: 2.5px;
@@ -38,29 +35,45 @@
 			p{
 				margin: 1rem 0;
 			}
-			.container{
-				dsiplay: grid;
-				grid-template-clumns: 1fr 1fr;
-			}
-				
+			.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-1 {
+  background-image: url('profilepic1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  height: 800px;
+}
+
+.column-2 {
+  background-image: url('profilepic2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+			
 		</style>
 	</head>
 	
 	<body>
-		<div class="container">
-		<div class="Column 1">
 		
-		<p>Hello there! My name is Mensah Anni, and I am a passionate web developer seeking to solve problems using online platforms.
-		</p>
-		<h2>My Background.</h2>
-		<p>I was born in Akatsi in the Volta Region but raised in Accra. I became fascinated by how the computer and internet works during my high school edaucation and decided to pursue career in the computer science field.</p>
-			</div>
-			<div class= "Column 2">
-		<h2>My Experience</h2>
-		<p>Well, for now I do not have any exprience yet simce I am still a student.</p>
-		<h2>My Hobbies.</h2>
-		<p>When I am not coding, you will definitely find me on the basket ball court releasing some stress. I also enjoy going out with feinds and having some good fun.</p>
-				</div>
+		<div class="container">
+  <div class="column column-1">
+  	    <p>Hello there! My name is Mensah Anni, and I am a passionate web developer seeking to solve problems using online platforms.</p>
+    <h2>My Background.</h2>
+    <p>I was born in Akatsi in the Volta Region but raised in Accra.<br> I became fascinated by how the computer and internet works during my high school education and decided to pursue a career in the computer science field.</p>
+  </div>
+  <div class="column column-2"> 
+    <h2>My Experience</h2>
+    <p>Well, for now I do not have any experience yet since I am still a student.</p>
+    <h2>My Hobbies.</h2>
+    <p>When I am not coding, you will definitely find me on the basketball court releasing some stress. I also enjoy going out with friends and having some good fun.</p>
+  </div>
 </div>
+	
+
 	</body>
 </html>
